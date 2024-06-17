@@ -1,0 +1,19 @@
+.input {
+    height: 1.25rem;
+    padding: 0.25rem;
+    padding-right: 0px;
+    font-family: monospace;
+    font-size: 0.875rem;
+    opacity: 0;
+  }
+
+  .blinking {
+    animation: blinker 1s step-start infinite;
+
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

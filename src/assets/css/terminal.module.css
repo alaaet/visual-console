@@ -1,0 +1,36 @@
+
+.Terminal textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.Terminal textarea::placeholder {
+  color: transparent;
+}
+
+.Terminal textarea {
+  caret-color: transparent; /* Hide the caret */
+}
+
+.blinking::after {
+  animation: blinker 1s step-start infinite;
+  color: white;
+  content: ' _';
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.line {
+  flex-grow: 1;
+  height: 2rem;
+}
+
+.output {
+  white-space: pre-wrap;
+  max-height: 45vh;
+  overflow-y: auto;
+  width: 100%;
+}
